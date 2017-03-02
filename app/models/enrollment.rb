@@ -45,7 +45,7 @@ class Enrollment < ActiveRecord::Base
     end     
   end
  def tinhhinhvang
-    tmp = lop_mon_hoc.khoi_luong_du_kien.to_i
+    tmp = lop_mon_hoc.khoi_luong_du_kien.to_i || 0
 	  tmp = 10000 if tmp == 0
     (((tong_vang || 0) * 100.0) / tmp).to_f.round(2)
   end

@@ -52,7 +52,7 @@ Qlgd::Application.configure do
   :email => {
     :deliver_with => :deliver, # Rails >= 4.2.1 do not need this option since it defaults to :deliver_now
     :email_prefix => "[PREFIX] ",
-    :sender_address => %{"notifier" tuyendv@hpu.edu.vn},
+    :sender_address => %{"notifier" trungth@hpu.edu.vn},
     :exception_recipients => %w{tuyendv@hpu.edu.vn}
   }
   # Disable delivery errors, bad email addresses will be ignored
